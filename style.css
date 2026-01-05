@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+:root {
+  --main-color: #eaeaea;
+  --text-color: #000;
+  --text2-color: #868686;
+  --shdow-color: #0000002d;
+}
+[data-theme="dark"] {
+  --main-color: #222;
+  --text-color: #fff;
+  --text2-color: #a3a3a3;
+  --shdow-color: #ffffff1a;
+}
+
+body {
+    background: var(--main-color);
+}
+.head{
+    margin: 25vw 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+.head .toggle{
+    background: var(--main-color);
+    border: none;
+    padding: 20px;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px #00000066 , inset 0px 1px 5px var(--shdow-color);
+    position: fixed;
+    top: 5vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    z-index: 3;
+}
+.toggle i{
+    color: var(--text-color);
+    font-size: 5vw;
+}
+.head .toggle i{
+    transform: translateX(0) rotate(0deg);
+    transition: all 0.8s;
+}
+.head .toggle .active{
+    transform: translateX(45vw) rotate(360deg);
+    transition: all 0.8s;
+}
+.head .img img{
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 0px 10px 20px #00000066;
+    transition: all 0.8s ease;
+    z-index: -1;
+}
+.head .img .active{
+    transform: scale(1.01);
+    border-radius: 50%;
+}
+.head .name h1{
+    font-size: 7vw;
+    color: var(--text-color);
+    transition: all 0.5s;
+}
+.head .name p{
+    font-size: 4vw;
+    color: var(--text2-color);
+    margin-top: 8px;
+}
+.head .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.5s;
+}
+.head .btns .btn{
+    background: var(--main-color);
+    padding: 15px;
+    border-radius: 10rem;
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px #00000066 , inset 0px 1px 5px var(--shdow-color);
+    transition: all 0.5s;
+}
+.head .btns .btn:hover{
+    transform: scale(1.01);
+    letter-spacing: 1.2px;
+}
+.btn i , .btn span{
+    color: var(--text-color);
+}
+.head .links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 23px;
+}
+.links h1{
+    color: var(--text-color);
+    margin-bottom: 3vw;
+    margin-left: 2vw;
+}
+.links .link{
+    background: var(--main-color);
+    box-shadow: 0px 10px 20px #00000066 , inset 0px 1px 5px var(--shdow-color);
+    border-radius: 4vw;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.icon i{
+    color: var(--text-color);
+    font-size: 10vw;
+    margin-left: -1vw;
+}
+.icon .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vw;
+}
+.info .name{
+    font-size: 5vw;
+    color: var(--text-color);
+}
+.info .url{
+    font-size: 3vw;
+    color: var(--text2-color);
+}
+.link .go i{
+    color: var(--text-color);
+    font-size: 5vw;
+    transition: all 0.5s;
+}
+.links .link:hover .go i{
+    transform: rotate(-30deg);
+}
+.head .foot h1{
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 3vw;
+    margin-bottom: 10vw;
+    margin-top: 4vw;
+}
