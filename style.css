@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+:root {
+  --main-color: #ae5b02;
+}
+body {
+    background: #212121;
+}
+.head{
+    margin: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+.head .img img{
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 0px 10px 20px #00000066;
+    transition: all 0.5s;
+}
+.head .name h1{
+    font-size: 7vw;
+    color: #fff;
+    transition: all 0.5s;
+}
+.head .name p{
+    font-size: 4vw;
+    color: #ddd;
+    margin-top: 8px;
+}
+.head .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.5s;
+}
+.head .btns .btn{
+    background: #222;
+    padding: 15px;
+    border-radius: 10rem;
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px #00000066 , inset 0px 1px 2px #ffffff1a;
+    transition: all 0.5s;
+}
+.head .btns .btn:hover{
+    transform: scale(1.01);
+    letter-spacing: 1.2px;
+}
+.btn i , .btn span{
+    color: #ddd;
+}
+.head .links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 23px;
+}
+.links h1{
+    color: #fff;
+    margin-bottom: 4vw;
+}
+.links .link{
+    background: #222;
+    box-shadow: 0px 10px 20px #00000066 , inset 0px 1px 2px #ffffff1a;
+    border-radius: 4vw;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.icon i{
+    color: #fff;
+    font-size: 10vw;
+    margin-left: -1vw;
+}
+.icon .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vw;
+}
+.info .name{
+    font-size: 5vw;
+    color: #fff;
+}
+.info .url{
+    font-size: 3vw;
+    color: #fff;
+}
+.link .go i{
+    color: #fff;
+    font-size: 5vw;
+    transition: all 0.5s;
+}
+.links .link:hover .go i{
+    transform: rotate(-30deg);
+}
